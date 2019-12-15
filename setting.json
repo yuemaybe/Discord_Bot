@@ -1,4 +1,12 @@
 {
     "TOKEN":"NjU0NzE4Nzg3MDI2NjgxODY2.XfJtog.MJCPfCkTFJNoWFQTy5BPHbaB2as",
-    "test_channel":"654717730800533531"
+
+    "test_channel":"654717730800533531",
+
+    "pic":"C:\\Users\\yuema\\OneDrive\\文件\\GitHub\\Discord_Bot\\pic\\10.png",
+
+    "rpic":["C:\\Users\\yuema\\OneDrive\\文件\\GitHub\\Discord_Bot\\pic\\10.png",
+           "C:\\Users\\yuema\\OneDrive\\文件\\GitHub\\Discord_Bot\\pic\\2.jpg"],
+           
+    "pic_url":"https://memes.tw/user-resource/bce2f94f688d10685fab8baf84ca6e78.png"
 }
