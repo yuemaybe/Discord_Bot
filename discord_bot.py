@@ -17,17 +17,6 @@ async def on_ready():
     channel = bot.get_channel(int(jdata['test_channel']))
     await channel.send('機器人已上線  :100:')
 
-@bot.event
-async def on_member_join(member):
-    print(F'{member} 加入群組')
-    channel = bot.get_channel(int(jdata['test_channel']))
-    await channel.send(F'{member} 加入群組！')
-
-@bot.event
-async def on_member_remove(member):
-    print(F'{member} 離開群組')
-    channel = bot.get_channel(int(jdata['test_channel']))
-    await channel.send(F'{member} 離開群組！')
 
 @bot.command()
 async def load(ctx, extension):
