@@ -13,6 +13,6 @@ class Main(Cog_Extension):
     async def test(self, ctx):
         await ctx.send('test123')
 
-#建置機器人
+#註冊Cog
 def setup(bot):
     bot.add_cog(Main(bot))
