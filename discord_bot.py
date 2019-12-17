@@ -17,6 +17,11 @@ async def on_ready():
     channel = bot.get_channel(int(jdata['test_channel']))
     await channel.send('機器人已上線  :100:')
 
+@bot.command()
+async def close(ctx):
+    print('機器人測試離線')
+    await ctx.send('機器人已離線  :skull:')
+    await bot.close()
 
 @bot.command()
 async def load(ctx, extension):
