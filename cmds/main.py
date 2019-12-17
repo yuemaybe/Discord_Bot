@@ -13,6 +13,16 @@ class Main(Cog_Extension):
     async def test(self, ctx):
         await ctx.send('test123')
 
+    @commands.command()
+    async def resay(self, ctx, *, msg):
+        await ctx.message.delete()
+        await ctx.send(msg)
+
+    @commands.command()
+    async def cmsg(self, ctx, num : int):
+        await ctx.channel.purge(limit = num+1)
+
+
 #註冊Cog
 def setup(bot):
     bot.add_cog(Main(bot))

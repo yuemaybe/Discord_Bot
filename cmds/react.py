@@ -35,7 +35,7 @@ class React(Cog_Extension):
         embed.set_thumbnail(url="https://memes.tw/user-resource/6ec00f197961fdd0b6398b102b9f529e.png")
         embed.add_field(name="開發環境", value="Python", inline=True)
         embed.add_field(name="開發工具", value="VScode", inline=True)
-        embed.set_footer(text="By YG")
+        embed.set_footer(text="Send By "+ str(ctx.author))
         await ctx.send(embed=embed)
 
 def setup(bot):
