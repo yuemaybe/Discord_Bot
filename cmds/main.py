@@ -23,6 +23,6 @@ class Main(Cog_Extension):
         await ctx.channel.purge(limit = num+1)
 
 
-#註冊Cog
+#註冊機器人
 def setup(bot):
     bot.add_cog(Main(bot))

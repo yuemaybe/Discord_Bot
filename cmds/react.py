@@ -37,6 +37,11 @@ class React(Cog_Extension):
         embed.add_field(name="開發工具", value="VScode", inline=True)
         embed.set_footer(text="Send By "+ str(ctx.author))
         await ctx.send(embed=embed)
+    
+    @commands.command()
+    async def 換頻(self, ctx, ch : int):
+        self.channel = self.bot.get_channel(ch)
+        await ctx.send(F'目前頻道 : {self.channel.mention}')
 
 def setup(bot):
     bot.add_cog(React(bot))
