@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 from Discord_Bot.core.classes import Cog_Extension
-import asyncio, asyncio, datetime, json
+import asyncio, datetime, json
 
 with open('setting.json', 'r', encoding='utf8') as jFile:
     jdata = json.load(jFile)
